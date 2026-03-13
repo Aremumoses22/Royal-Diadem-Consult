@@ -20,6 +20,16 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Deploy on Render
+
+This repository is configured for Render as a Node web service, not a static site.
+
+- Use the included `render.yaml` blueprint or create a Render Web Service manually.
+- Build command: `npm ci && npm run build`
+- Start command: `npm run start`
+- Runtime: Node.js `>=20.9.0`
+- Required environment variables: `RESEND_API_KEY`, `RESEND_FROM_EMAIL`, `CONTACT_EMAIL`, `NEXT_PUBLIC_SITE_URL`
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
